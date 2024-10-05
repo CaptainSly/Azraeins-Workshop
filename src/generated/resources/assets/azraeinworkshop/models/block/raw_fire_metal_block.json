@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "azraeinworkshop:block/raw_fire_metal_block"
+  }
+}

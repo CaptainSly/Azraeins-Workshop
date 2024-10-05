@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "azraeinworkshop:peacock_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "azraeinworkshop:peacock_gem"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "azraeinworkshop:fire_metal_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "azraeinworkshop:fire_metal_nugget"
+  }
+}

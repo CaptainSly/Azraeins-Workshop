@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "peacock_gem",
+  "ingredient": {
+    "item": "azraeinworkshop:raw_peacock_chunk"
+  },
+  "result": {
+    "count": 1,
+    "id": "azraeinworkshop:peacock_gem"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "azraeinworkshop:baked_gourd"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SB ",
+    "BT ",
+    "  T"
+  ],
+  "result": {
+    "count": 1,
+    "id": "azraeinworkshop:xyloth_staff"
+  }
+}

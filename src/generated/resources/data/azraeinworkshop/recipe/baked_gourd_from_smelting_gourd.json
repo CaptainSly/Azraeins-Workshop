@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 350,
+  "experience": 0.35,
+  "group": "baked_gourd",
+  "ingredient": {
+    "item": "azraeinworkshop:gourd"
+  },
+  "result": {
+    "count": 1,
+    "id": "azraeinworkshop:baked_gourd"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "azraeinworkshop:gourd"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "azraeinworkshop:workshop_manual"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_baked_gourd": {
+      "conditions": {
+        "items": [
+          {
+            "items": "azraeinworkshop:baked_gourd"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "azraeinworkshop:xyloth_staff"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_baked_gourd"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "azraeinworkshop:xyloth_staff"
+    ]
+  }
+}

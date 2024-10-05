@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gourd": {
+      "conditions": {
+        "items": [
+          {
+            "items": "azraeinworkshop:gourd"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "azraeinworkshop:workshop_manual"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gourd"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "azraeinworkshop:workshop_manual"
+    ]
+  }
+}

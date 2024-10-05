@@ -1,0 +1,60 @@
+{
+    "item.azraeinworkshop.red_feather": "Red Feather",
+    "item.azraeinworkshop.green_feather": "Green Feather",
+    "item.azraeinworkshop.blue_feather": "Blue Feather",
+    "item.azraeinworkshop.purple_feather": "Purple Feather",
+    "item.azraeinworkshop.yellow_feather": "Yellow Feather",
+
+    "item.azraeinworkshop.gourd": "Gourd",
+    "item.azraeinworkshop.baked_gourd": "Baked Gourd",
+    "item.azraeinworkshop.smashed_gourd": "Smashed Gourd",
+    "item.azraeinworkshop.baobab_fruit": "Baobab Fruit",
+
+    "item.azraeinworkshop.wood_knife": "Wooden Knife",
+    "item.azraeinworkshop.cobble_knife": "Cobble Knife",
+    "item.azraeinworkshop.iron_knife": "Iron Knife",
+    "item.azraeinworkshop.fire_metal_knife": "Fire Metal Knife",
+    "item.azraeinworkshop.gold_knife": "Gold Knife",
+    "item.azraeinworkshop.diamond_knife": "Diamond Knife",
+    "item.azraeinworkshop.peacock_knife": "Peacock Knife",
+    "item.azraeinworkshop.netherite_knife": "Netherite Knife",
+
+    "item.azraeinworkshop.workshop_manual": "Workshop Manual",
+
+    "item.azraeinworkshop.xyloth_staff": "Xyloth Staff",
+
+    "item.azraeinworkshop.fire_metal_sword": "Fire Metal Sword",
+    "item.azraeinworkshop.fire_metal_shovel": "Fire Metal Shovel",
+    "item.azraeinworkshop.fire_metal_pickaxe": "Fire Metal Pickaxe",
+    "item.azraeinworkshop.fire_metal_axe": "Fire Metal Axe",
+    "item.azraeinworkshop.fire_metal_hoe": "Fire Metal Hoe",
+
+    "item.azraeinworkshop.raw_peacock_chunk": "Raw Peacock Chunk",
+    "item.azraeinworkshop.peacock_gem": "Peacock Gem",
+    "item.azraeinworkshop.raw_fire_metal_chunk": "Raw Fire Metal Chunk",
+    "item.azraeinworkshop.fire_metal_ingot": "Fire Metal Ingot",
+    "item.azraeinworkshop.fire_metal_nugget": "Fire Metal Nugget",
+
+    "item.azraeinworkshop.zebra_hide": "Zebra Hide",
+
+    "block.azraeinworkshop.peacock_block": "Peacock Block",
+    "block.azraeinworkshop.raw_peacock_block": "Raw Peacock Block",
+    "block.azraeinworkshop.fire_metal_block": "Fire Metal Block",
+    "block.azraeinworkshop.raw_fire_metal_block": "Raw Fire Metal Block",
+    
+    "block.azraeinworkshop.deepslate_peacock_ore": "Deepslate Peacock Ore",
+    "block.azraeinworkshop.peacock_ore": "Peacock Ore",
+    "block.azraeinworkshop.deepslate_fire_metal_ore": "Deepslate Fire Metal Ore",
+    "block.azraeinworkshop.fire_metal_ore": "Fire Metal Ore",
+
+    "block.azraeinworkshop.smashing_rock": "Smashing Rock",
+
+    "creativetab.azraeinworkshop.items_tab": "Azraein's Workshop Items",
+    "creativetab.azraeinworkshop.blocks_tab": "Azraein's Workshop Blocks",
+
+    "tooltip.azraeinworkshop.workshop_manual.description": "Looks like it's time to RTFM!",
+    "tooltip.azraeinworkshop.workshop_manual.shift_down": "Press §eShift§r for more Information",
+
+    "sound.azraeinworkshop.gourd_smash": "Gourd smashed open"
+
+}

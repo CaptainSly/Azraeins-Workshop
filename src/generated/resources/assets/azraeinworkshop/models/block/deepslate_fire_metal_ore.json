@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "azraeinworkshop:block/deepslate_fire_metal_ore"
+  }
+}

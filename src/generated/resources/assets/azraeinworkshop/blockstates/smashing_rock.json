@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "azraeinworkshop:block/smashing_rock"
+    },
+    "type=double": {
+      "model": "azraeinworkshop:block/smashing_rock"
+    },
+    "type=top": {
+      "model": "azraeinworkshop:block/smashing_rock_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "azraeinworkshop:block/smashing_rock",
+    "side": "azraeinworkshop:block/smashing_rock",
+    "top": "azraeinworkshop:block/smashing_rock"
+  }
+}

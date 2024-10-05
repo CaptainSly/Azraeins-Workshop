@@ -1,0 +1,11 @@
+{
+    "name": "Gourds",
+    "icon": "azraeinworkshop:gourd",
+    "category": "azraeinworkshop:item_category",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Gourds! An amazing fruit with a hard shell!"
+        }
+    ]
+}

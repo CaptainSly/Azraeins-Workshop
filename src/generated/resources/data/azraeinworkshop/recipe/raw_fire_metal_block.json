@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "azraeinworkshop:raw_fire_metal_chunk"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "azraeinworkshop:raw_fire_metal_block"
+  }
+}

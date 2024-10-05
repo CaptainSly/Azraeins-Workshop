@@ -1,0 +1,6 @@
+// 1.21.1	2024-10-04T18:55:32.9967805	Tags for minecraft:block mod id azraeinworkshop
+926e805eea93938ca76670bc3afa8373a5957fca data/azraeinworkshop/tags/block/incorrect_for_fire_metal_tool.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data/azraeinworkshop/tags/block/needs_fire_metal_tool.json
+4afd1ebb244d96953b42db07c6f1fa4fe1a78b15 data/minecraft/tags/block/mineable/pickaxe.json
+4c10e2d38be0a61ea153863d75b7718091b78703 data/minecraft/tags/block/needs_iron_tool.json
+f9b7eacd7e04585a770c7dbb20ac3d0434f87e9a data/minecraft/tags/block/needs_stone_tool.json
