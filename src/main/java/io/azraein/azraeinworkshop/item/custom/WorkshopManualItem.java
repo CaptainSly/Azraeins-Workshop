@@ -1,4 +1,4 @@
-package io.azraein.azraeinworkshop.item;
+package io.azraein.azraeinworkshop.item.custom;
 
 import java.util.List;
 

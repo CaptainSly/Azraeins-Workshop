@@ -32,7 +32,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.SHOVELS).add(ModItems.FIRE_METAL_SHOVEL.get());
         tag(ItemTags.HOES).add(ModItems.FIRE_METAL_HOE.get());
 
-        // Lion King Tags
+        tag(ItemTags.TRIMMABLE_ARMOR).add(ModItems.FIRE_METAL_HELMET.get(), ModItems.FIRE_METAL_CHESTPLATE.get(),
+                ModItems.FIRE_METAL_LEGGINGS.get(), ModItems.FIRE_METAL_BOOTS.get());
+
+        // Azraein's Workshop Tags
         tag(ModTags.Items.SMASHABLE_GOURD)
                 .add(ModItems.GOURD.get());
 

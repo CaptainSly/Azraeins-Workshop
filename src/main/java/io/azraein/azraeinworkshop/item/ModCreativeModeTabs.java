@@ -29,7 +29,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.GREEN_FEATHER);
 
                         output.accept(ModItems.PEACOCK_GEM);
-                        output.accept(ModItems.RAW_PEACOCK_CHUNK);
                         output.accept(ModItems.RAW_FIRE_METAL_CHUNK);
                         output.accept(ModItems.FIRE_METAL_INGOT);
                         output.accept(ModItems.FIRE_METAL_NUGGET);
@@ -58,6 +57,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FIRE_METAL_SHOVEL);
                         output.accept(ModItems.FIRE_METAL_PICKAXE);
                         output.accept(ModItems.FIRE_METAL_HOE);
+                        output.accept(ModItems.FIRE_METAL_HAMMER);
+
+                        output.accept(ModItems.FIRE_METAL_HELMET);
+                        output.accept(ModItems.FIRE_METAL_CHESTPLATE);
+                        output.accept(ModItems.FIRE_METAL_LEGGINGS);
+                        output.accept(ModItems.FIRE_METAL_BOOTS);
+
+                        output.accept(ModItems.IRON_HAMMER);
+                        output.accept(ModItems.DIAMOND_HAMMER);
                     })
 
                     .build());
@@ -73,7 +81,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.FIRE_METAL_ORE);
                         output.accept(ModBlocks.DEEPSLATE_FIRE_METAL_ORE);
 
-                        output.accept(ModBlocks.RAW_PEACOCK_BLOCK);
                         output.accept(ModBlocks.PEACOCK_BLOCK);
                         output.accept(ModBlocks.RAW_FIRE_METAL_BLOCK);
                         output.accept(ModBlocks.FIRE_METAL_BLOCK);

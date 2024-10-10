@@ -6,6 +6,7 @@ import java.util.concurrent.CompletableFuture;
 import io.azraein.azraeinworkshop.AzraeinWorkshop;
 import io.azraein.azraeinworkshop.block.ModBlocks;
 import io.azraein.azraeinworkshop.item.ModItems;
+import io.azraein.azraeinworkshop.item.types.HammerItem;
 import net.minecraft.core.HolderLookup.Provider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -22,8 +23,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
 
-        List<ItemLike> PEACOCK_GEM_SMELTABLES = List.of(ModItems.RAW_PEACOCK_CHUNK,
-                        ModBlocks.PEACOCK_ORE, ModBlocks.DEEPSLATE_PEACOCK_ORE);
+        List<ItemLike> PEACOCK_GEM_SMELTABLES = List.of(ModBlocks.PEACOCK_ORE, ModBlocks.DEEPSLATE_PEACOCK_ORE);
 
         List<ItemLike> FIRE_METAL_INGOT_SMETABLES = List.of(ModItems.RAW_FIRE_METAL_CHUNK,
                         ModBlocks.DEEPSLATE_FIRE_METAL_ORE, ModBlocks.FIRE_METAL_ORE);
@@ -47,10 +47,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                                 .save(recipeOutput);
 
                 ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.XYLOTH_STAFF.get())
-                                .pattern("SB ")
-                                .pattern("BT ")
-                                .pattern("  T")
+                                .pattern("FST")
+                                .pattern(" TS")
+                                .pattern("T B")
                                 .define('B', ModItems.BAKED_GOURD)
+                                .define('F', Items.FLINT)
                                 .define('S', Items.STRING)
                                 .define('T', Items.STICK)
                                 .unlockedBy("has_baked_gourd", has(ModItems.BAKED_GOURD))
@@ -82,19 +83,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                                 .unlockedBy("has_raw_fire_metal_block", has(ModBlocks.RAW_FIRE_METAL_BLOCK))
                                 .save(recipeOutput);
 
-                ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_PEACOCK_CHUNK.get(), 9)
-                                .requires(ModBlocks.RAW_PEACOCK_BLOCK)
-                                .unlockedBy("has_raw_peacock_block", has(ModBlocks.RAW_PEACOCK_BLOCK))
-                                .save(recipeOutput);
-
                 fullBlockRecipe(recipeOutput, ModBlocks.PEACOCK_BLOCK, Ingredient.of(ModItems.PEACOCK_GEM),
                                 "has_peacock_gem", ModItems.PEACOCK_GEM.get());
 
                 fullBlockRecipe(recipeOutput, ModBlocks.FIRE_METAL_BLOCK, Ingredient.of(ModItems.FIRE_METAL_INGOT),
                                 "has_fire_metal_ingot", ModItems.FIRE_METAL_INGOT.get());
-
-                fullBlockRecipe(recipeOutput, ModBlocks.RAW_PEACOCK_BLOCK, Ingredient.of(ModItems.RAW_PEACOCK_CHUNK),
-                                "has_raw_peacock_chunk", ModItems.RAW_PEACOCK_CHUNK.get());
 
                 fullBlockRecipe(recipeOutput, ModItems.FIRE_METAL_INGOT, Ingredient.of(ModItems.FIRE_METAL_NUGGET),
                                 "has_fire_metal_ingot", ModItems.FIRE_METAL_INGOT.get());
@@ -134,6 +127,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 pickaxeRecipe(ModItems.FIRE_METAL_PICKAXE, ModItems.FIRE_METAL_INGOT, recipeOutput);
                 axeRecipe(ModItems.FIRE_METAL_AXE, ModItems.FIRE_METAL_INGOT, recipeOutput);
                 hoeRecipe(ModItems.FIRE_METAL_HOE, ModItems.FIRE_METAL_INGOT, recipeOutput);
+                hammerRecipe(ModItems.FIRE_METAL_HAMMER, ModBlocks.FIRE_METAL_BLOCK.get(),
+                                ModItems.FIRE_METAL_INGOT.get(), "has_fire_metal_ingot",
+                                ModItems.FIRE_METAL_INGOT.get(), recipeOutput);
+
+                hammerRecipe(ModItems.DIAMOND_HAMMER, Blocks.DIAMOND_BLOCK, Items.DIAMOND, "has_diamond", Items.DIAMOND,
+                                recipeOutput);
+
+                hammerRecipe(ModItems.IRON_HAMMER, Blocks.IRON_BLOCK, Items.IRON_INGOT, "has_iron_ingot",
+                                Items.IRON_INGOT, recipeOutput);
         }
 
         protected static void fullBlockRecipe(RecipeOutput recipeOutput, DeferredItem<Item> itemToCreate,
@@ -154,6 +156,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                                 .pattern("PPP")
                                 .pattern("PPP")
                                 .define('P', ingredients)
+                                .unlockedBy(unlockString, has(unlockItem))
+                                .save(recipeOutput);
+        }
+
+        protected static void hammerRecipe(DeferredItem<HammerItem> hammerToCreate, Block blockMaterial,
+                        Item itemMaterial,
+                        String unlockString, Item unlockItem, RecipeOutput recipeOutput) {
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, hammerToCreate.get())
+                                .pattern("BIB")
+                                .pattern("BSB")
+                                .pattern(" S ")
+                                .define('B', blockMaterial)
+                                .define('I', itemMaterial)
+                                .define('S', Items.STICK)
                                 .unlockedBy(unlockString, has(unlockItem))
                                 .save(recipeOutput);
         }

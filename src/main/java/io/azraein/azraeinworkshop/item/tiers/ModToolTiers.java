@@ -1,5 +1,6 @@
-package io.azraein.azraeinworkshop.item;
+package io.azraein.azraeinworkshop.item.tiers;
 
+import io.azraein.azraeinworkshop.item.ModItems;
 import io.azraein.azraeinworkshop.tags.ModTags;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;

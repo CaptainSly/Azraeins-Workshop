@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_raw_prideland_chunk": {
+    "has_raw_fire_metal_chunk": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_raw_prideland_chunk"
+      "has_raw_fire_metal_chunk"
     ]
   ],
   "rewards": {

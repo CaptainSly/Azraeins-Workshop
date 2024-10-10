@@ -27,7 +27,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                                 .add(ModBlocks.DEEPSLATE_PEACOCK_ORE.get())
                                 .add(ModBlocks.PEACOCK_BLOCK.get())
                                 .add(ModBlocks.PEACOCK_ORE.get())
-                                .add(ModBlocks.RAW_PEACOCK_BLOCK.get())
                                 .add(ModBlocks.DEEPSLATE_FIRE_METAL_ORE.get())
                                 .add(ModBlocks.FIRE_METAL_ORE.get())
                                 .add(ModBlocks.RAW_FIRE_METAL_BLOCK.get())
@@ -42,8 +41,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 tag(BlockTags.NEEDS_IRON_TOOL)
                                 .add(ModBlocks.DEEPSLATE_PEACOCK_ORE.get())
                                 .add(ModBlocks.PEACOCK_BLOCK.get())
-                                .add(ModBlocks.PEACOCK_ORE.get())
-                                .add(ModBlocks.RAW_PEACOCK_BLOCK.get());
+                                .add(ModBlocks.PEACOCK_ORE.get());
 
                 tag(ModTags.Blocks.NEEDS_FIRE_METAL_TOOL).addTag(BlockTags.NEEDS_IRON_TOOL);
                 tag(ModTags.Blocks.INCORRECT_FOR_FIRE_METAL_TOOL).addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)

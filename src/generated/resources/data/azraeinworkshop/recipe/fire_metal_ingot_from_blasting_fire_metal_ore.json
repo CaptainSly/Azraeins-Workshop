@@ -3,7 +3,7 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.52,
-  "group": "prideland_ingot",
+  "group": "fire_metal_ingot",
   "ingredient": {
     "item": "azraeinworkshop:fire_metal_ore"
   },

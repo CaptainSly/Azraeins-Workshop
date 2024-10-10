@@ -23,7 +23,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.FIRE_METAL_ORE);
 
         blockWithItem(ModBlocks.PEACOCK_BLOCK);
-        blockWithItem(ModBlocks.RAW_PEACOCK_BLOCK);
         blockWithItem(ModBlocks.FIRE_METAL_BLOCK);
         blockWithItem(ModBlocks.RAW_FIRE_METAL_BLOCK);
 

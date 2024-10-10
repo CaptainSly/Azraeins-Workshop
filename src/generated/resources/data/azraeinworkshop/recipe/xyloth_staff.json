@@ -5,6 +5,9 @@
     "B": {
       "item": "azraeinworkshop:baked_gourd"
     },
+    "F": {
+      "item": "minecraft:flint"
+    },
     "S": {
       "item": "minecraft:string"
     },
@@ -13,9 +16,9 @@
     }
   },
   "pattern": [
-    "SB ",
-    "BT ",
-    "  T"
+    "FST",
+    " TS",
+    "T B"
   ],
   "result": {
     "count": 1,

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_raw_peacock_chunk": {
+    "has_peacock_block": {
       "conditions": {
         "items": [
           {
-            "items": "azraeinworkshop:raw_peacock_chunk"
+            "items": "azraeinworkshop:fire_metal_block"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "azraeinworkshop:peacock_gem_from_blasting_raw_peacock_chunk"
+        "recipe": "azraeinworkshop:fire_metal_block_to_ingots"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_raw_peacock_chunk"
+      "has_peacock_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "azraeinworkshop:peacock_gem_from_blasting_raw_peacock_chunk"
+      "azraeinworkshop:fire_metal_block_to_ingots"
     ]
   }
 }

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_peacock_block": {
+    "has_material_item_stick": {
       "conditions": {
         "items": [
           {
-            "items": "azraeinworkshop:fire_metal_block"
+            "items": "minecraft:stick"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "azraeinworkshop:prideland_block_to_ingots"
+        "recipe": "azraeinworkshop:fire_metal_knife"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_peacock_block"
+      "has_material_item_stick"
     ]
   ],
   "rewards": {
     "recipes": [
-      "azraeinworkshop:prideland_block_to_ingots"
+      "azraeinworkshop:fire_metal_knife"
     ]
   }
 }

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_raw_prideland_block": {
+    "has_raw_fire_metal_block": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_raw_prideland_block"
+      "has_raw_fire_metal_block"
     ]
   ],
   "rewards": {

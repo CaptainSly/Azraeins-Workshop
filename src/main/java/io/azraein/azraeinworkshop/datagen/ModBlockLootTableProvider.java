@@ -30,18 +30,18 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         @Override
         protected void generate() {
                 dropSelf(ModBlocks.PEACOCK_BLOCK.get());
-                dropSelf(ModBlocks.RAW_PEACOCK_BLOCK.get());
                 dropSelf(ModBlocks.FIRE_METAL_BLOCK.get());
                 dropSelf(ModBlocks.RAW_FIRE_METAL_BLOCK.get());
                 dropSelf(ModBlocks.SMASHING_ROCK.get());
 
                 add(ModBlocks.SMASHING_ROCK.get(), block -> createSlabItemTable(ModBlocks.SMASHING_ROCK.get()));
 
-                addOreDrop(ModBlocks.PEACOCK_ORE.get(), ModItems.RAW_PEACOCK_CHUNK.get());
-                addMultiOreDrop(ModBlocks.DEEPSLATE_PEACOCK_ORE.get(), ModItems.RAW_PEACOCK_CHUNK.get(), 2, 4);
+                addMultiOreDrop(ModBlocks.PEACOCK_ORE.get(), ModItems.PEACOCK_GEM.get(), 1, 2);
+                addMultiOreDrop(ModBlocks.DEEPSLATE_PEACOCK_ORE.get(), ModItems.PEACOCK_GEM.get(), 1, 2);
 
-                addOreDrop(ModBlocks.FIRE_METAL_ORE.get(), ModItems.RAW_FIRE_METAL_CHUNK.get());
-                addMultiOreDrop(ModBlocks.DEEPSLATE_FIRE_METAL_ORE.get(), ModItems.RAW_FIRE_METAL_CHUNK.get(), 2, 4);
+
+                addMultiOreDrop(ModBlocks.FIRE_METAL_ORE.get(), ModItems.RAW_FIRE_METAL_CHUNK.get(), 1, 4);
+                addMultiOreDrop(ModBlocks.DEEPSLATE_FIRE_METAL_ORE.get(), ModItems.RAW_FIRE_METAL_CHUNK.get(), 1, 4);
 
         }
 

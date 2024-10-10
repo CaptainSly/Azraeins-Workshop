@@ -52,11 +52,6 @@ public class ModBlocks {
                                         BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()
                                                         .sound(SoundType.STONE)));
 
-        public static final DeferredBlock<Block> RAW_PEACOCK_BLOCK = registerBlock("raw_peacock_block",
-                        () -> new Block(
-                                        BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()
-                                                        .sound(SoundType.STONE)));
-
         public static final DeferredBlock<SlabBlock> SMASHING_ROCK = registerBlock("smashing_rock",
                         () -> new SmashingRockBlock(
                                         BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()
