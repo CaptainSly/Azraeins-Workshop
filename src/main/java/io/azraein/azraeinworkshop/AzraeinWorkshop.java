@@ -7,6 +7,7 @@ import com.mojang.logging.LogUtils;
 import io.azraein.azraeinworkshop.block.ModBlocks;
 import io.azraein.azraeinworkshop.item.ModCreativeModeTabs;
 import io.azraein.azraeinworkshop.item.ModItems;
+import io.azraein.azraeinworkshop.item.tiers.ModArmorMaterials;
 import io.azraein.azraeinworkshop.sounds.ModSoundEvents;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -33,6 +34,8 @@ public class AzraeinWorkshop {
         ModCreativeModeTabs.register(modEventBus);
 
         ModSoundEvents.register(modEventBus);
+
+        ModArmorMaterials.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

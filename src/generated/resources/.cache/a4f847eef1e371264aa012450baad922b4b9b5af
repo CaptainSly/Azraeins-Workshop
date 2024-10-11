@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-04T18:55:33.0073158	Tags for minecraft:item mod id azraeinworkshop
+// 1.21.1	2024-10-10T19:51:29.4583011	Tags for minecraft:item mod id azraeinworkshop
 94de7bcbb94fb5a5716d3a6eae5261aa456757e3 data/azraeinworkshop/tags/item/smashable_gourd.json
 2f407efa480d1b76f709e38b0da72b01859c2c9c data/azraeinworkshop/tags/item/tannable.json
 a9f2d8a373a4c7d39250e67f60a726963326049b data/azraeinworkshop/tags/item/tanning_knife.json
@@ -7,3 +7,4 @@ affe2d5b8cd095804fa1961968754f8c7a1b5d4d data/minecraft/tags/item/hoes.json
 2bddbcffae99d7c43bcd1f663150c609a0e770ee data/minecraft/tags/item/pickaxes.json
 2674da6cfcc3b1e7ae5c2c090f37213d10c6ff0b data/minecraft/tags/item/shovels.json
 f8a8a6efda8c471b1cea651799f83744b1ee235d data/minecraft/tags/item/swords.json
+8a7fc158da3f810afe6a9dec1e15f85ed107ea74 data/minecraft/tags/item/trimmable_armor.json

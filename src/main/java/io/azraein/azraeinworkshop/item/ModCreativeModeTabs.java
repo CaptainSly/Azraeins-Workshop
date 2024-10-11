@@ -56,6 +56,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FIRE_METAL_SWORD);
                         output.accept(ModItems.FIRE_METAL_SHOVEL);
                         output.accept(ModItems.FIRE_METAL_PICKAXE);
+                        output.accept(ModItems.FIRE_METAL_AXE);
                         output.accept(ModItems.FIRE_METAL_HOE);
                         output.accept(ModItems.FIRE_METAL_HAMMER);
 
