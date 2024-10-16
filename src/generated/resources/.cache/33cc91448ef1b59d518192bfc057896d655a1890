@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-10T19:51:29.4542985	Item Models: azraeinworkshop
+// 1.21.1	2024-10-16T02:55:29.3313976	Item Models: azraeinworkshop
 96522ea59222b57f97bd46f43837ff199eb0b1ea assets/azraeinworkshop/models/item/baked_gourd.json
 3618daf6518d5b4ce1b0ce237d75e41367ca90b3 assets/azraeinworkshop/models/item/baobab_fruit.json
 afc452e4fbd9c28e79762807ce7ca53a7208b78f assets/azraeinworkshop/models/item/blue_feather.json
@@ -41,6 +41,7 @@ f2407ebcef8db9d354732976971285ccb331612e assets/azraeinworkshop/models/item/fire
 433c2b46ab96c37786ea001717c7db51e745aa78 assets/azraeinworkshop/models/item/fire_metal_helmet_quartz_trim.json
 6465cec1de4abe8706f0bf07beead76986070698 assets/azraeinworkshop/models/item/fire_metal_helmet_redstone_trim.json
 ff5104282519d3dbb0045b5263f3925d2a211f93 assets/azraeinworkshop/models/item/fire_metal_hoe.json
+fc189cd2ff19500e1395b43f00c582bc1ac839af assets/azraeinworkshop/models/item/fire_metal_horse_armor.json
 599d94c4a734219dbcf6916100fb0f3be6929b75 assets/azraeinworkshop/models/item/fire_metal_ingot.json
 f8578a659f2419cce5588898afe9795a3dac231e assets/azraeinworkshop/models/item/fire_metal_knife.json
 3b18e0e0af743b996d6dc9991de955f03d8f799c assets/azraeinworkshop/models/item/fire_metal_leggings.json

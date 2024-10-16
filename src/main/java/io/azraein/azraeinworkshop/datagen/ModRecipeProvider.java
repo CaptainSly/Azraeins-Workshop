@@ -127,6 +127,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 pickaxeRecipe(ModItems.FIRE_METAL_PICKAXE, ModItems.FIRE_METAL_INGOT, recipeOutput);
                 axeRecipe(ModItems.FIRE_METAL_AXE, ModItems.FIRE_METAL_INGOT, recipeOutput);
                 hoeRecipe(ModItems.FIRE_METAL_HOE, ModItems.FIRE_METAL_INGOT, recipeOutput);
+                
                 hammerRecipe(ModItems.FIRE_METAL_HAMMER, ModBlocks.FIRE_METAL_BLOCK.get(),
                                 ModItems.FIRE_METAL_INGOT.get(), "has_fire_metal_ingot",
                                 ModItems.FIRE_METAL_INGOT.get(), recipeOutput);
@@ -136,6 +137,66 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
                 hammerRecipe(ModItems.IRON_HAMMER, Blocks.IRON_BLOCK, Items.IRON_INGOT, "has_iron_ingot",
                                 Items.IRON_INGOT, recipeOutput);
+
+                armorHelmetRecipe(recipeOutput, ModItems.FIRE_METAL_HELMET,
+                                Ingredient.of(ModItems.FIRE_METAL_INGOT),
+                                "has_fire_metal_ingot", ModItems.FIRE_METAL_INGOT.get());
+                armorChestplateRecipe(recipeOutput, ModItems.FIRE_METAL_CHESTPLATE,
+                                Ingredient.of(ModItems.FIRE_METAL_INGOT),
+                                "has_fire_metal_ingot", ModItems.FIRE_METAL_INGOT.get());
+                armorLeggingsRecipe(recipeOutput, ModItems.FIRE_METAL_LEGGINGS,
+                                Ingredient.of(ModItems.FIRE_METAL_INGOT),
+                                "has_fire_metal_ingot", ModItems.FIRE_METAL_INGOT.get());
+                armorBootsRecipe(recipeOutput, ModItems.FIRE_METAL_BOOTS,
+                                Ingredient.of(ModItems.FIRE_METAL_INGOT),
+                                "has_fire_metal_ingot", ModItems.FIRE_METAL_INGOT.get());
+
+        }
+
+        protected static void armorChestplateRecipe(RecipeOutput recipeOutput,
+                        DeferredItem<ArmorItem> armorPieceToCreate,
+                        Ingredient ingredients, String unlockString, Item unlockItem) {
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, armorPieceToCreate.get())
+                                .pattern("P P")
+                                .pattern("PPP")
+                                .pattern("PPP")
+                                .define('P', ingredients)
+                                .unlockedBy(unlockString, has(unlockItem))
+                                .save(recipeOutput);
+        }
+
+        protected static void armorHelmetRecipe(RecipeOutput recipeOutput, DeferredItem<ArmorItem> armorPieceToCreate,
+                        Ingredient ingredients, String unlockString, Item unlockItem) {
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, armorPieceToCreate.get())
+                                .pattern("PPP")
+                                .pattern("P P")
+                                .pattern("   ")
+                                .define('P', ingredients)
+                                .unlockedBy(unlockString, has(unlockItem))
+                                .save(recipeOutput);
+        }
+
+        protected static void armorLeggingsRecipe(RecipeOutput recipeOutput,
+                        DeferredItem<ArmorItem> armorPieceToCreate,
+                        Ingredient ingredients, String unlockString, Item unlockItem) {
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, armorPieceToCreate.get())
+                                .pattern("PPP")
+                                .pattern("P P")
+                                .pattern("P P")
+                                .define('P', ingredients)
+                                .unlockedBy(unlockString, has(unlockItem))
+                                .save(recipeOutput);
+        }
+
+        protected static void armorBootsRecipe(RecipeOutput recipeOutput, DeferredItem<ArmorItem> armorPieceToCreate,
+                        Ingredient ingredients, String unlockString, Item unlockItem) {
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, armorPieceToCreate.get())
+                                .pattern("P P")
+                                .pattern("P P")
+                                .pattern("   ")
+                                .define('P', ingredients)
+                                .unlockedBy(unlockString, has(unlockItem))
+                                .save(recipeOutput);
         }
 
         protected static void fullBlockRecipe(RecipeOutput recipeOutput, DeferredItem<Item> itemToCreate,
@@ -165,7 +226,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         String unlockString, Item unlockItem, RecipeOutput recipeOutput) {
                 ShapedRecipeBuilder.shaped(RecipeCategory.MISC, hammerToCreate.get())
                                 .pattern("BIB")
-                                .pattern("BSB")
+                                .pattern("ISI")
                                 .pattern(" S ")
                                 .define('B', blockMaterial)
                                 .define('I', itemMaterial)

@@ -1,17 +1,20 @@
 package io.azraein.azraeinworkshop.item;
 
+import java.util.List;
 import java.util.function.Supplier;
 
+import com.google.common.collect.ImmutableMap;
+
 import io.azraein.azraeinworkshop.AzraeinWorkshop;
-import io.azraein.azraeinworkshop.item.custom.WorkshopManualItem;
-import io.azraein.azraeinworkshop.item.custom.XylothStaffItem;
+import io.azraein.azraeinworkshop.item.books.WorkshopManualItem;
+import io.azraein.azraeinworkshop.item.staffs.XylothStaffItem;
 import io.azraein.azraeinworkshop.item.tiers.ModArmorMaterials;
 import io.azraein.azraeinworkshop.item.tiers.ModToolTiers;
-import io.azraein.azraeinworkshop.item.types.HammerItem;
-import io.azraein.azraeinworkshop.item.types.KnifeItem;
-import io.azraein.azraeinworkshop.item.types.StaffItem;
+import io.azraein.azraeinworkshop.item.types.*;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.Item.Properties;
 import net.neoforged.bus.api.IEventBus;
@@ -113,9 +116,17 @@ public class ModItems {
 
         // Music Discs
 
-        // Armors
-        public static final DeferredItem<ArmorItem> FIRE_METAL_HELMET = createArmorItem("fire_metal_helmet",
-                        ModArmorMaterials.FIRE_METAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET, 16);
+        // Armorsw
+        public static final DeferredItem<ArmorItem> FIRE_METAL_HELMET = ITEMS.register("fire_metal_helmet",
+                        () -> new EffectArmorItem(ModArmorMaterials.FIRE_METAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                                        new Properties().durability(ArmorItem.Type.HELMET.getDurability(16)),
+                                        (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
+                                                        .put(ModArmorMaterials.FIRE_METAL_ARMOR_MATERIAL,
+                                                                        List.of(new MobEffectInstance(
+                                                                                        MobEffects.FIRE_RESISTANCE, 200,
+                                                                                        1,
+                                                                                        false, false)))
+                                                        .build()));
 
         public static final DeferredItem<ArmorItem> FIRE_METAL_CHESTPLATE = createArmorItem("fire_metal_chestplate",
                         ModArmorMaterials.FIRE_METAL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, 16);
@@ -125,6 +136,10 @@ public class ModItems {
 
         public static final DeferredItem<ArmorItem> FIRE_METAL_BOOTS = createArmorItem("fire_metal_boots",
                         ModArmorMaterials.FIRE_METAL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, 16);
+
+        public static final DeferredItem<Item> FIRE_METAL_HORSE_ARMOR = createCustomItem("fire_metal_horse_armor",
+                        () -> new AnimalArmorItem(ModArmorMaterials.FIRE_METAL_ARMOR_MATERIAL,
+                                        AnimalArmorItem.BodyType.EQUESTRIAN, false, new Properties().stacksTo(1)));
 
         // Mob Hides/Pelts
         public static final DeferredItem<Item> ZEBRA_HIDE = createGenericItem("zebra_hide");

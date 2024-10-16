@@ -64,6 +64,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FIRE_METAL_CHESTPLATE);
                         output.accept(ModItems.FIRE_METAL_LEGGINGS);
                         output.accept(ModItems.FIRE_METAL_BOOTS);
+                        output.accept(ModItems.FIRE_METAL_HORSE_ARMOR);
 
                         output.accept(ModItems.IRON_HAMMER);
                         output.accept(ModItems.DIAMOND_HAMMER);

@@ -14,7 +14,8 @@ public class ModDataComponents {
 
     public static final DeferredRegister<DataComponentType<?>> DATA_COMPONENT_TYPES = DeferredRegister
             .createDataComponents(ResourceKey.createRegistryKey(
-                    ResourceLocation.fromNamespaceAndPath(AzraeinWorkshop.MOD_ID, "components/")), AzraeinWorkshop.MOD_ID);
+                    ResourceLocation.fromNamespaceAndPath(AzraeinWorkshop.MOD_ID, "components/")),
+                    AzraeinWorkshop.MOD_ID);
 
     private static <T> DeferredHolder<DataComponentType<?>, DataComponentType<T>> register(String name,
             UnaryOperator<DataComponentType.Builder<T>> builderOperator) {

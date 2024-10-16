@@ -70,6 +70,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.FIRE_METAL_LEGGINGS);
         trimmedArmorItem(ModItems.FIRE_METAL_BOOTS);
 
+        basicItem(ModItems.FIRE_METAL_HORSE_ARMOR.get());
+
         basicItem(ModItems.BLUE_FEATHER.get());
         basicItem(ModItems.GREEN_FEATHER.get());
         basicItem(ModItems.RED_FEATHER.get());
